@@ -9,7 +9,6 @@ import ButtonTransparent from '../components/ButtonTransparent'
 import Loading from '../components/Loading';
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import {auth }from '../services/authorization'
-import { useEffect } from 'react/cjs/react.development';
 
 const LoginScreen = ({navigation}) => {
     const [login, setLogin] = useState('')

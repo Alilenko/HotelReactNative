@@ -4,19 +4,15 @@ import ButtonColor from '../components/ButtonColor';
 import ButtonTransparent from '../components/ButtonTransparent';
 import NumericInput from 'react-native-numeric-input'
 import SafeArea from '../components/SafeArea';
-import {useDispatch, useSelector} from 'react-redux'
+import {useDispatch} from 'react-redux'
 import { signOut } from "firebase/auth";
 import {auth} from '../services/authorization'
-import { useAuth } from '../hooks/useAuth';
 import {changeBalance} from '../app/UserSlice'
 
 const UserScreen = ({navigation}) => {
     const [balance, setBalance] = useState(0)
     const [input, setInput] = useState(0)
-    const {users, currentUser} = useSelector(state => state.user)
     const dispatch = useDispatch();
-
-    const {id} = useAuth();
 
     const logout = async () => {
       await signOut(auth)

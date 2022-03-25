@@ -9,7 +9,7 @@ import { useAuth } from '../hooks/useAuth';
 const Stack = createStackNavigator();
 function RootNavigation() {
 
-  const {isAuth, email} = useAuth();
+  const {isAuth} = useAuth();
   
   return (
     <NavigationContainer>

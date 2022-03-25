@@ -1,5 +1,4 @@
-import {StyleSheet} from 'react-native'
-import React, {useEffect} from 'react'
+import React from 'react'
 import HotelsList from '../components/HotelsList'
 import SafeArea from '../components/SafeArea'
 
@@ -10,10 +9,3 @@ export default function HomeScreen({navigation}) {
     </SafeArea>
   )
 }   
-
-const styles = StyleSheet.create({
-    container: {
-        display: 'flex',
-    }
-    
-})
