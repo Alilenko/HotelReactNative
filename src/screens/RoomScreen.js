@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
+import {TouchableOpacity, StyleSheet, ScrollView } from 'react-native'
 import React from 'react'
 import RoomsContent from '../components/RoomsContent';
 import { Ionicons } from '@expo/vector-icons';

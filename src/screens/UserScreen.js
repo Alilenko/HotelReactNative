@@ -13,7 +13,7 @@ const UserScreen = ({navigation}) => {
     const [balance, setBalance] = useState(0)
     const [input, setInput] = useState(0)
     const dispatch = useDispatch();
-
+    
     const logout = async () => {
       await signOut(auth)
       navigation.navigate('Login')

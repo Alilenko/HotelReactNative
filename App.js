@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyleSheet} from 'react-native';
 import RootNavigation from './src/Navigation/navigation';
 import 'react-native-gesture-handler';
 import {HotelContextProvider} from './src/services/HotelContext';
@@ -22,6 +21,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
- 
-});

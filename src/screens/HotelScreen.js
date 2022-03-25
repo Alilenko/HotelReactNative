@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView} from 'react-native'
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons';
 import RoomsList from '../components/RoomsList';
@@ -8,14 +8,13 @@ export default function HotelScreen({ route, navigation}) {
     const hotel = route.params
 
   return (
-
     <SafeArea >
         <View style={styles.container}>
         <TouchableOpacity style={styles.back} onPress={()=> navigation.goBack()}>
             <Ionicons name="chevron-back-sharp" size={20} color="black" />
         </TouchableOpacity>
         <Image style={styles.image} source={{uri: hotel.url}} />
-        <View >
+        <ScrollView >
             <Text style={styles.name}>{hotel.name}</Text>
             <View style={styles.block}>
                 <Ionicons name="location-sharp" size={16} color="#c60000" />
@@ -26,7 +25,7 @@ export default function HotelScreen({ route, navigation}) {
                 <Text style={styles.rating}>{hotel.rating} ({hotel.reviews} reviews)</Text>
             </View>
             <Text style={styles.subtext}>{hotel.description}</Text>
-        </View>
+        </ScrollView>
         <RoomsList rooms={hotel.rooms}/>
         </View>
     </SafeArea>
@@ -79,5 +78,6 @@ const styles = StyleSheet.create({
         paddingLeft: 10,
         color: 'gray'
     },
-
 })
+
+
