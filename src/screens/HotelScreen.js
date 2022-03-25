@@ -34,9 +34,6 @@ export default function HotelScreen({ route, navigation}) {
 }
 
 const styles = StyleSheet.create({
-    color: {
-        minHeight: 220
-    },
     container: {
         flex: 1,
         position: 'relative',
@@ -81,6 +78,6 @@ const styles = StyleSheet.create({
         paddingLeft: 10,
         color: 'gray'
     },
-
 })
+
 

@@ -10,7 +10,6 @@ import Loading from '../components/Loading';
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import {auth }from '../services/authorization'
 
-
 const LoginScreen = ({navigation}) => {
     const [login, setLogin] = useState('')
     const [password, setPassword] = useState('')
