@@ -52,7 +52,8 @@ const styles = StyleSheet.create({
     },
     item: {
         position: 'relative',
-        marginRight: 10
+        marginRight: 10,
+        minHeight: 220
     },
     image: {
         width: 150,
